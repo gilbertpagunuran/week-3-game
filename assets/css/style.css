@@ -1,0 +1,92 @@
+body {background-image: url("../images/lightcolors.jpg");
+        background-repeat: no-repeat;
+  }
+
+    #main-content {
+    padding-top: 75px;
+  }
+
+  #word {text-align: center;}
+  #guess {height: 100px; text-align: center; width: 100%;}
+  #win, #attempt, #loss {text-align: center; width: 90%;}
+  #msgLine {text-align: center; width: 100%;}
+  #win, #loss, #attempt {border-bottom: 3px solid;}
+  #win, #winList, #loss, #lossList {text-align: center;}
+  #winList, #lossList {height: 286px; overflow: auto;}
+    /* -----------------------*/
+    /* running color animation */
+    /* ------------------------*/
+  .divA {
+        animation-name: runningLine; 
+      -webkit-animation-name: runningLine; /* Safari 4.0 - 8.0 */
+  }
+
+
+  .divA {
+    width: 40px;
+    height: 2px;
+    margin: 0 0 10px 0;
+    background-color: none;
+    position: relative;
+
+      animation-duration: 3s;
+      -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+   
+      animation-delay: 0s;
+      -webkit-animation-delay: 0s;
+
+      animation-direction: alternate;
+      -webkit-animation-direction: alternate;
+
+      animation-timing-function: linear;
+      -webkit-animation-timing-function: linear;
+
+      animation-iteration-count: infinite;
+      -webkit-animation-iteration-count: infinite;
+      
+  }
+
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes tColor {
+      0%   {background-color: red;}
+      16.66%  {background-color: orange;}
+      33.32%  {background-color: yellow;}
+      49.98% {background-color: green;}
+      66.64% {background-color: blue;}
+      83.3% {background-color: indigo;}
+      100% {background-color: violet;}
+  }
+  @-webkit-keyframes runningLine {
+      0%   {background-color: red;}
+      16.66%  {background-color: orange;}
+      33.32%  {background-color: yellow;}
+      49.98% {background-color: green;}
+      66.64% {background-color: blue;}
+      83.3% {background-color: indigo;}
+      100% {background-color: violet;}
+      from {left: 0px}
+      to   {left: max-width}
+  }
+
+
+  /* Standard syntax */
+  @keyframes tColor {
+     0%   {background-color: red;}
+      16.66%  {background-color: orange;}
+      33.32%  {background-color: yellow;}
+      49.98% {background-color: green;}
+      66.64% {background-color: blue;}
+      83.3% {background-color: indigo;}
+      100% {background-color: violet;}
+  }
+  @keyframes runningLine {
+      0%   {background-color: red;}
+      16.66%  {background-color: orange;}
+      33.32%  {background-color: yellow;}
+      49.98% {background-color: green;}
+      66.64% {background-color: blue;}
+      83.3% {background-color: indigo;}
+      100% {background-color: violet;}
+      from {left: 0px}
+      to   {left: 900px}
+  }
